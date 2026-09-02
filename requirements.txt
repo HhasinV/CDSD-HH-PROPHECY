@@ -1,0 +1,34 @@
+# ============================================================
+# Prophecy — Smart Reassort | requirements.txt
+# Installation : pip install -r requirements.txt
+# Python >= 3.11 recommandé
+# ============================================================
+
+# --- Données & calcul ---
+pandas>=2.1
+numpy>=1.26
+
+# --- Visualisation (EDA) ---
+plotly>=5.18
+
+# --- Machine Learning ---
+scikit-learn>=1.4
+xgboost>=2.0
+optuna>=3.5
+
+# --- Accès base PostgreSQL (Odoo) ---
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+python-dotenv>=1.0        # lecture du fichier .env (identifiants hors du code)
+
+# --- MLOps (tracking & modèle) ---
+mlflow>=2.10
+boto3>=1.34               # stockage des artefacts modèle sur S3
+
+# --- Serving & interface ---
+fastapi>=0.110
+uvicorn>=0.27             # serveur ASGI pour FastAPI
+streamlit>=1.31
+
+# --- Notebook ---
+jupyter>=1.0
